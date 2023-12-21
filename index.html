@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Com Cart</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+<style>
+    /*CSS Reset*/
+    body {
+        font-family: 'Aboreto', cursive;
+        margin: 0px;
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    .mid {
+        display: block;
+        width: 40.5%;
+        margin: 12px auto;
+    }
+
+
+    .btn {
+        font-family: 'Aboreto', cursive;
+        background-color: #006a4e;
+        color: black;
+        cursor: pointer;
+        height: 40px;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        margin: 2% 2%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2% 5%;
+        width: 30%;
+
+    }
+
+    .inputs {
+        font-family: 'Aboreto', cursive;
+        display: block;
+        margin: 10px 0px;
+        width: 97%;
+        text-align: center;
+        font-weight: bold;
+        color: blue;
+    }
+
+    .hr-lines {
+        position: relative;
+        max-width: 500px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .hr-lines:before {
+        content: " ";
+        height: 2px;
+        width: 180px;
+        background: gray;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+    .hr-lines:after {
+        content: " ";
+        height: 2px;
+        width: 180px;
+        background: gray;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+</style>
+<header>
+    <h5 style="color: #006a4e" class="hr-lines">Bundle & Save</h5>
+</header>
+
+<body onload="myonloadFunction()">
+
+
+    <div id="myMDIV1" onclick="myFunction(1)" style="border: 1px solid gray" class="container">
+        <input type="radio" style="display: inline" id="htmlH" name="fav_language" value="KK">
+         <label style="text-align: left;display: inline" for="html">1&nbsp;Pair<br>DKK&nbsp;195.00</label>
+        <P3 style="display: inline; margin-left: 90%">50%&nbsp;OFF</P3><br>
+        <div id="myDIV1">
+            <label style="margin-left: 5%; font-size: small" for="sizes">Size</label>
+            <label style="margin-left: 10%; font-size: small" for="sizes">Colour</label><br>
+            <label for="size">#1</label>
+            <select style="margin-right: 5%; margin-left: 0.6%;" id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <select name="colour" id="size">
+                <option value="Colour">Colour</option>
+            </select><br>
+            <label for="size">#2</label>
+            <select style="margin-right: 5%;" id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <select name="colour" id="size">
+                <option value="Colour">Colour</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="myMDIV2" onclick="myFunction(2)" style="border: 1px solid gray" class="container">
+        <input type="radio" style="display: inline" id="htmlH" name="fav_language" value="KK">
+         <label style="text-align: left;display: inline" for="html">2&nbsp;Pair<br>DKK&nbsp;345.00</label>
+        <P3 style="display: inline; margin-left: 20%; font-size: 14px; color: gray"><s>DKK&nbsp;195.00</s></P3>
+        <P3 style="display: inline; margin-left: 85%; font-size: 14px; color: #006a4e">Most&nbsp;Popular</P3><br>
+        <P3 style="display: inline; margin-left: 90%; font-size: 14px;">40%&nbsp;OFF</P3><br>
+        <div id="myDIV2">
+            <label style="margin-left: 5%; font-size: small" for="sizes">Size</label>
+            <label style="margin-left: 10%; font-size: small" for="sizes">Colour</label><br>
+            <label for="size">#1</label>
+            <select style="margin-right: 5%; margin-left: 0.6%;" id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <select name="colour" id="size">
+                <option value="Colour">Colour</option>
+            </select><br>
+            <label for="size">#2</label>
+            <select style="margin-right: 5%;" id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <select name="colour" id="size">
+                <option value="Colour">Colour</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="myMDIV3" onclick="myFunction(3)" style="border: 1px solid gray" class="container">
+        <input type="radio" style="display: inline" id="htmlH" name="fav_language" value="KK">
+         <label style="text-align: left;display: inline" for="html">3&nbsp;Pair<br>DKK&nbsp;528.00</label>
+        <P3 style="display: inline; margin-left: 90%">60%&nbsp;OFF</P3><br>
+        <div id="myDIV3">
+            <label style="margin-left: 5%; font-size: small" for="sizes">Size</label>
+            <label style="margin-left: 10%; font-size: small" for="sizes">Colour</label><br>
+            <label for="size">#1</label>
+            <select style="margin-right: 5%; margin-left: 0.6%;" id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <select name="colour" id="size">
+                <option value="Colour">Colour</option>
+            </select><br>
+            <label for="size">#2</label>
+            <select style="margin-right: 5%;" id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <select name="colour" id="size">
+                <option value="Colour">Colour</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <label style="margin-left: 30%; color: green" for="sizes">Free&nbsp;2&nbsp;Day&nbsp;Shipping</label>
+        <label style="margin-left: 15%" for="sizes">Total:&nbsp;DKK&nbsp;360.00</label>
+
+        <button class="mid btn">+ Add to Cart</button>
+        <p style="margin-left: 55%">&copy;&nbsp;Powered&nbsp;by&nbsp;Pumper</p>
+    </div>
+
+</body>
+<script>
+    function myonloadFunction() {
+
+        var element = document.getElementById("myDIV2");
+        element.style.display = "block";
+        var Melement = document.getElementById("myMDIV2");
+        Melement.style.backgroundColor = "#BCE8DD";
+        Melement.style.border = "2px solid #006a4e"
+        var element = document.getElementById("myDIV1");
+        element.style.display = "none";
+        var Melement = document.getElementById("myMDIV1");
+        Melement.style.backgroundColor = "white";
+        Melement.style.border = "1px solid gray"
+        var element = document.getElementById("myDIV3");
+        element.style.display = "none";
+        var Melement = document.getElementById("myMDIV3");
+        Melement.style.backgroundColor = "white";
+        Melement.style.border = "1px solid gray"
+    }
+    function myFunction(e) {
+
+        if (e == 1) {
+            var element = document.getElementById("myDIV1");
+            element.style.display = "block";
+            var Melement = document.getElementById("myMDIV1");
+            Melement.style.backgroundColor = "#BCE8DD";
+            Melement.style.border = "2px solid #006a4e"
+            var element = document.getElementById("myDIV2");
+            element.style.display = "none";
+            var Melement = document.getElementById("myMDIV2");
+            Melement.style.backgroundColor = "white";
+            Melement.style.border = "1px solid gray"
+            var element = document.getElementById("myDIV3");
+            element.style.display = "none";
+            var Melement = document.getElementById("myMDIV3");
+            Melement.style.backgroundColor = "white";
+            Melement.style.border = "1px solid gray"
+        }
+        else if (e == 2) {
+            var element = document.getElementById("myDIV2");
+            element.style.display = "block";
+            var Melement = document.getElementById("myMDIV2");
+            Melement.style.backgroundColor = "#BCE8DD";
+            Melement.style.border = "2px solid #006a4e"
+            var element = document.getElementById("myDIV1");
+            element.style.display = "none";
+            var Melement = document.getElementById("myMDIV1");
+            Melement.style.backgroundColor = "white";
+            Melement.style.border = "1px solid gray"
+            var element = document.getElementById("myDIV3");
+            element.style.display = "none";
+            var Melement = document.getElementById("myMDIV3");
+            Melement.style.backgroundColor = "white";
+            Melement.style.border = "1px solid gray"
+        }
+        else if (e == 3) {
+            var element = document.getElementById("myDIV3");
+            element.style.display = "block";
+            var Melement = document.getElementById("myMDIV3");
+            Melement.style.backgroundColor = "#BCE8DD";
+            Melement.style.border = "2px solid #006a4e"
+            var element = document.getElementById("myDIV2");
+            element.style.display = "none";
+            var Melement = document.getElementById("myMDIV2");
+            Melement.style.backgroundColor = "white";
+            Melement.style.border = "1px solid gray"
+            var element = document.getElementById("myDIV1");
+            element.style.display = "none";
+            var Melement = document.getElementById("myMDIV1");
+            Melement.style.backgroundColor = "white";
+            Melement.style.border = "1px solid gray"
+        }
+    }
+
+
+</script>
+
+</html>
