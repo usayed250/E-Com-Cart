@@ -97,7 +97,7 @@
 
 
     <div id="myMDIV1" onclick="myFunction(1)" style="border: 1px solid gray" class="container">
-        <input type="radio" style="display: inline" id="htmlH" name="fav_language" value="KK">
+        <input type="radio" style="display: inline" id="htmlH1" name="fav_language" value="KK">
          <label style="text-align: left;display: inline" for="html">1&nbsp;Pair<br>DKK&nbsp;195.00</label>
         <P3 style="display: inline; margin-left: 90%">50%&nbsp;OFF</P3><br>
         <div id="myDIV1">
@@ -129,7 +129,7 @@
     </div>
 
     <div id="myMDIV2" onclick="myFunction(2)" style="border: 1px solid gray" class="container">
-        <input type="radio" style="display: inline" id="htmlH" name="fav_language" value="KK">
+        <input type="radio" style="display: inline" id="htmlH2" name="fav_language" value="KK">
          <label style="text-align: left;display: inline" for="html">2&nbsp;Pair<br>DKK&nbsp;345.00</label>
         <P3 style="display: inline; margin-left: 20%; font-size: 14px; color: gray"><s>DKK&nbsp;195.00</s></P3>
         <P3 style="display: inline; margin-left: 85%; font-size: 14px; color: #006a4e">Most&nbsp;Popular</P3><br>
@@ -163,7 +163,7 @@
     </div>
 
     <div id="myMDIV3" onclick="myFunction(3)" style="border: 1px solid gray" class="container">
-        <input type="radio" style="display: inline" id="htmlH" name="fav_language" value="KK">
+        <input type="radio" style="display: inline" id="htmlH3" name="fav_language" value="KK">
          <label style="text-align: left;display: inline" for="html">3&nbsp;Pair<br>DKK&nbsp;528.00</label>
         <P3 style="display: inline; margin-left: 90%">60%&nbsp;OFF</P3><br>
         <div id="myDIV3">
@@ -210,6 +210,7 @@
         var Melement = document.getElementById("myMDIV2");
         Melement.style.backgroundColor = "#BCE8DD";
         Melement.style.border = "2px solid #006a4e"
+        document.getElementById('htmlH2').checked = true;
         var element = document.getElementById("myDIV1");
         element.style.display = "none";
         var Melement = document.getElementById("myMDIV1");
@@ -229,6 +230,7 @@
             var Melement = document.getElementById("myMDIV1");
             Melement.style.backgroundColor = "#BCE8DD";
             Melement.style.border = "2px solid #006a4e"
+            document.getElementById('htmlH1').checked = true;
             var element = document.getElementById("myDIV2");
             element.style.display = "none";
             var Melement = document.getElementById("myMDIV2");
@@ -246,6 +248,7 @@
             var Melement = document.getElementById("myMDIV2");
             Melement.style.backgroundColor = "#BCE8DD";
             Melement.style.border = "2px solid #006a4e"
+            document.getElementById('htmlH2').checked = true;
             var element = document.getElementById("myDIV1");
             element.style.display = "none";
             var Melement = document.getElementById("myMDIV1");
@@ -263,6 +266,7 @@
             var Melement = document.getElementById("myMDIV3");
             Melement.style.backgroundColor = "#BCE8DD";
             Melement.style.border = "2px solid #006a4e"
+            document.getElementById('htmlH3').checked = true;
             var element = document.getElementById("myDIV2");
             element.style.display = "none";
             var Melement = document.getElementById("myMDIV2");
